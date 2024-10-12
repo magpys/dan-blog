@@ -1,7 +1,7 @@
 export default function Page(): JSX.Element {
   return (
     <div className={"flex flex-col gap-6"}>
-      <h1>Finally I'm writing a blog.</h1>
+      <h1>Finally I&#39;m writing a blog.</h1>
       <p className={"text-gray-400 italic"}>11/10/2024</p>
       <p>
         I'm over 10 years into my career as a software developer, and I'm
