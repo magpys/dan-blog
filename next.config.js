@@ -5,6 +5,7 @@ const withMDX = require("@next/mdx")();
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
+  basePath: "/dan-blog",
   images: { unoptimized: true },
 };
 
