@@ -34,7 +34,7 @@ export default function RootLayout({
             <Link href={"/about"}>About</Link>
           </nav>
         </header>
-        <main className="mx-auto p-6 max-w-2xl space-y-6">{children}</main>
+        <main className="mx-auto p-6 max-w-3xl space-y-6">{children}</main>
       </body>
     </html>
   );

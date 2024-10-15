@@ -8,14 +8,9 @@ type Post = {
 
 const posts: Post[] = [
   {
-    title: `Finally, I'm writing a blog.`,
-    href: "/finally",
-    postDate: new Date("2024-10-13"),
-  },
-  {
-    title: `My thoughts on NextJS`,
+    title: `Why I've been avoiding next.js`,
     href: "/next",
-    postDate: new Date("2022-10-13"),
+    postDate: new Date("2024-10-14"),
   },
 ];
 

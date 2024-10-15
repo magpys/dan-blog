@@ -1,15 +1,96 @@
-# My experience with NextJS
+# Why I've been avoiding Next.js
 
-What do I say about NextJS? I've historically been very skeptical for these reasons:
+*14th October 2024*
 
-- a list
-- of
-- reasons
+I'm a software engineer with some ten years of experience, five years of that being with React. So why have I never used
+next.js before?
 
-But I'm sort of coming around to it.
+## What is next.js?
 
-The main upsides I see are:
+Next.js is a React framework, which in this case basically means it is vanilla React, plus a few extra bells and
+whistles. Things like typescript, a file-based router, tailwind, server-side generation and much more.
 
-## For static sites (such as this)
+On the whole, I like all the things bundled up with next.js, so what has been putting me off using it in the past?
 
-It can be very good.
+## Weaknesses of next.js
+
+I was already reasonably familiar with React when I first came across next.js. At that time, I wasn't interested in
+it for two reasons. First I couldn't understand what benefits it had over vanilla React and second
+it seemed overly complicated.
+
+### Unclear benefits
+
+On the first point - my statement isn't entirely correct. I understood what next.js offered, but it just didn't really
+seem like a benefit **to me**.
+
+- It offered file-based routing - but I already understood how to use `react-router`.
+- It offered typescript - but it was easy enough to include this in a vanilla React project with an hour or so
+of configuration.
+- It offered nebulous 'SEO optimisations' - but I didn't really need to prioritise SEO.
+- It offered performance increases - but I'd never found React to be 'too slow'.
+- It offered API routes - but I could easily create a separate back-end API that could handle these things perfectly
+well.
+
+This leads us to the second point:
+
+### It seemed overly complicated
+
+Vanilla React is plenty complicated enough already. When you start mixing in server-side generation and static pages,
+along with lots of other small optimisations, it's a lot of extra stuff to learn.
+
+On top of this, the new features bring new questions when it's time to deploy the app.
+Do I generate a static site or do I try to host it like a traditional web app?
+In which case, what do I do about scaling the app? How does it handle state?
+
+## Hype
+
+From my viewpoint, the complexities were off-putting and the upsides were not worth it, yet next.js was, and is, very
+popular.
+
+This lead me to conclude that it had been **over-hyped** by the development community and was being used to solve
+problems for which it was not well suited, similar to the way mongodb and graphql (amongst many others)
+had been misused in the past (and perhaps continue to be misused now).
+
+### And yet...
+
+When I initially started writing this post, I began convinced that my past self was correct, that next.js was over-hyped
+and that there were no **real** upsides to it, unless you really valued SEO, or had a huge devops team or something
+like that.
+
+Looking at it today as a more experienced developer, I see that next.js was and is probably fine, my harsh view
+came from where I was in my development career at that time.
+
+- I didn't need any of the added tools (typescript, tailwind etc.) bundling automatically because I already knew about
+them and had used them, but would that be the case to a junior developer?
+- I had worked as a back-end developer for years before also starting on front-end development, so of course API routes
+don't appeal to me, but would they appeal if you were less familiar with back-end development generally?
+- I had mainly worked in startups so I had to worry about deployment myself, but if you had a large, experienced devops
+team, would the hosting options be as daunting?
+- I had learned how to structure projects to protect against spaghetti code, but if I were a new junior developer,
+wouldn't the file-based router help with that?
+- I didn't care about SEO when building B2B apps, but if I was making a B2C website would that be the case?
+
+Once I take my specific scenario out of the equation and consider how it might help developers from all different
+backgrounds, I can see why next.js is popular.
+
+Indeed, now that I lead teams myself, I can see that some of the benefits to junior developers would help our
+team in general, even if it doesn't help me specifically. For that reason alone I would seriously consider using
+next.js in future projects.
+
+Perhaps next.js is being used to solve problems to which another technology may be better suited, but it is
+unfair to blame next.js for that. This is likely true for any popular technology, including the aforementioned mongodb,
+and graphql. The only criticism I could feasibly leverage at next.js around that is that they could make it clearer
+when and when not to use their framework.
+
+## Conclusion
+
+I came into this post hoping to write a scathing yet justified takedown of next.js - the monster hype framework
+beguiling developers into it's clutches with false promises. Not consciously, but it's clear to me now that it is what
+my ego wanted.
+
+The truth is next.js seems just fine. It seems like there are a lot of scenarios in which it would be useful,
+and the only reason I hadn't used it previously is that the upsides were not particularly useful to me.
+
+This may not be a profound conclusion, but I'm glad I was able to identify my unconscious bias against
+next.js. It has acted as a reminder for me to always question my beliefs, even in something as small as a preference
+for a front-end framework.

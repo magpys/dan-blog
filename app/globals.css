@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-900 text-gray-100 text-lg;
+    @apply bg-gray-900 text-gray-100 text-lg tracking-wider leading-8;
     font-family: Inter, sans-serif;
 }
 
@@ -32,5 +32,9 @@ h3 {
 }
 
 ul {
-    @apply list-disc px-6;
+    @apply list-disc pl-6;
+}
+
+li {
+    @apply pl-2
 }
