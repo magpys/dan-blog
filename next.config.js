@@ -7,6 +7,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   output: "export",
+  basePath: "/dan-blog",
 };
 
 module.exports = withMDX(nextConfig);
