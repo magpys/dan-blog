@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-900 text-gray-100 text-lg tracking-wider leading-8;
-    font-family: Inter, sans-serif;
+    @apply bg-gray-900 text-gray-100 text-lg tracking-wider leading-8 font-extralight;
+    font-family: Helvetica, sans-serif;
 }
 
 a {
