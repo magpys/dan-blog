@@ -1,13 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const withMDX = require("@next/mdx")();
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
-  basePath: "/dan-blog",
-  assetPrefix: "/dan-blog/",
+  // basePath: "/dan-blog",
+  // assetPrefix: "/dan-blog/",
   images: { unoptimized: true },
 };
 
-module.exports = withMDX(nextConfig);
+export default withMDX(nextConfig);
