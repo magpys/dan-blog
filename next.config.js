@@ -6,6 +6,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
   basePath: "/dan-blog",
+  assetsDir: "/dan-blog/",
   images: { unoptimized: true },
 };
 
