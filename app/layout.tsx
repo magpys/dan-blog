@@ -23,6 +23,7 @@ export default function RootLayout({
               alt="An iconised magpie"
               width={32}
               height={32}
+              unoptimized
             />
             <div className={`text-4xl text-orange-400 bold hidden sm:block`}>
               Magpys
