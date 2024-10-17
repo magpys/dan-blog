@@ -9,8 +9,6 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    loader: "custom",
-    loaderFile: "/utils/basePathImageLoader.ts",
   },
 };
 
