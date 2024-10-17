@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
-const notoSans = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Magpys",
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={notoSans.className}>
+    <html lang="en" className={montserrat.className}>
       <body className={`antialiased min-h-screen`}>
         <header className={`bg-gray-800 flex items-center justify-between p-6`}>
           <Link href={"/"} className={"flex gap-6 items-center"}>
