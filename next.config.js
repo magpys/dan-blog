@@ -3,6 +3,8 @@ import createMDX from "@next/mdx";
 
 const withMDX = createMDX();
 
+export const basePath = null;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],

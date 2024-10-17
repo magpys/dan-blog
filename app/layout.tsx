@@ -19,7 +19,7 @@ export default function RootLayout({
         <header className={`bg-gray-800 flex items-center justify-between p-6`}>
           <Link href={"/"} className={"flex gap-6 items-center"}>
             <Image
-              src="/dan-blog/magpie.png"
+              src="/magpie.png"
               alt="An iconised magpie"
               width={32}
               height={32}
