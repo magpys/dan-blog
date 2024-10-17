@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const notoSans = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Magpys",
@@ -14,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={notoSans.className}>
       <body className={`antialiased min-h-screen`}>
         <header className={`bg-gray-800 flex items-center justify-between p-6`}>
           <Link href={"/"} className={"flex gap-6 items-center"}>
@@ -25,12 +28,14 @@ export default function RootLayout({
               height={32}
               unoptimized
             />
-            <div className={`text-4xl text-orange-400 bold hidden sm:block`}>
+            <div
+              className={`text-4xl text-orange-400 font-bold hidden sm:block`}
+            >
               Magpys
             </div>
           </Link>
 
-          <nav className="flex items-center justify-between gap-6">
+          <nav className="flex items-center justify-between gap-6 font-normal">
             <Link href="/">Posts</Link>
             <Link href={"/about"}>About</Link>
           </nav>

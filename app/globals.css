@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-900 text-gray-100 text-lg tracking-wider leading-8 font-extralight;
-    font-family: Helvetica, sans-serif;
+    @apply bg-gray-900 text-gray-100 text-lg tracking-wider leading-8 font-light;
 }
 
 a {
@@ -20,15 +19,15 @@ a:visited {
 }
 
 h1 {
-    @apply text-4xl text-orange-400;
+    @apply text-4xl text-orange-400 font-bold;
 }
 
 h2 {
-    @apply text-2xl text-orange-400;
+    @apply text-2xl text-orange-400 font-normal;
 }
 
 h3 {
-    @apply text-xl font-bold;
+    @apply text-xl font-normal;
 }
 
 ul {
