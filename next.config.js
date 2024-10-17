@@ -9,7 +9,11 @@ export const basePath = null;
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    loader: "custom",
+    loaderFile: "/utils/basePathImageLoader.ts",
+  },
 };
 
 export default withMDX(nextConfig);
