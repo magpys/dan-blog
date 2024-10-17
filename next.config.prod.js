@@ -7,7 +7,7 @@ const withMDX = createMDX();
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
-  basePath: basePath,
+  basePath: "/dan-blog",
   assetPrefix: "/dan-blog",
   images: {
     unoptimized: true,
