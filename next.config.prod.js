@@ -1,8 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import createMDX from "@next/mdx";
 
-export const basePath = "/dan-blog";
-
 const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
