@@ -13,8 +13,8 @@ const nextConfig = {
   assetPrefix: "/dan-blog",
   images: {
     unoptimized: true,
-    loader: "custom",
-    loaderFile: "./utils/basePathImageLoader.ts",
+    // loader: "custom",
+    // loaderFile: "./utils/basePathImageLoader.ts",
   },
 };
 
