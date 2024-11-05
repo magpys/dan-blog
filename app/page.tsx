@@ -8,6 +8,11 @@ type Post = {
 
 const posts: Post[] = [
   {
+    title: "Retrospectives are the most important Agile meetings",
+    href: "/retrospectives-are-most-important",
+    postDate: new Date("2024-10-29"),
+  },
+  {
     title: "What I've learned after trying to write for two weeks",
     href: "/two-weeks-writing",
     postDate: new Date("2024-10-22"),
