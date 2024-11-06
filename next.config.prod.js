@@ -7,8 +7,9 @@ const withMDX = createMDX();
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
-  basePath: "/dan-blog",
-  assetPrefix: "/dan-blog",
+  // required for when it is hosted on github pages with an endpoint.
+  // basePath: "/dan-blog",
+  // assetPrefix: "/dan-blog",
   images: {
     unoptimized: true,
   },
