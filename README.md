@@ -7,6 +7,10 @@ I'm intentionally trying to keep this as simple as possible so that I don't aban
 
 https://www.magpys.dev/
 
+## Requirements
+
+* node v22
+
 ## Running in dev mode
 
 First, run the development server:
@@ -19,4 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deployment
 
-Non-existent (as of yet).
+Automatic through github pages.
