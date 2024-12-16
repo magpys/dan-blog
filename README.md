@@ -5,6 +5,7 @@ After over 10 years in the industry, I'm finally doing what most junior develope
 I'm using NextJS with mdx for ease of writing.
 I'm intentionally trying to keep this as simple as possible so that I don't abandon it.
 
+It lives! Here:
 https://www.magpys.dev/
 
 ## Requirements
