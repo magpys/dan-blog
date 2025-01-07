@@ -1,3 +1,5 @@
+import NowBuilding from "@/components/NowBuilding";
+
 export default function Page(): JSX.Element {
   return (
     <div className={`flex flex-col gap-6`}>
@@ -17,6 +19,7 @@ export default function Page(): JSX.Element {
         You can probably expect anything written in here to fall into one of
         these categories.
       </p>
+      <NowBuilding />
     </div>
   );
 }

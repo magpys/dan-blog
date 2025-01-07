@@ -1,4 +1,5 @@
 import PostItem from "@/components/PostItem";
+import NowBuilding from "@/components/NowBuilding";
 
 type Post = {
   title: string;
@@ -9,22 +10,22 @@ type Post = {
 const posts: Post[] = [
   {
     title: "My philosophy for software development",
-    href: "/software-development-philosophy-one",
+    href: "/posts/software-development-philosophy-one",
     postDate: new Date("2024-11-05"),
   },
   {
     title: "Retrospectives are the most important Agile meetings",
-    href: "/retrospectives-are-most-important",
+    href: "/posts/retrospectives-are-most-important",
     postDate: new Date("2024-10-29"),
   },
   {
     title: "What I've learned after trying to write for two weeks",
-    href: "/two-weeks-writing",
+    href: "/posts/two-weeks-writing",
     postDate: new Date("2024-10-22"),
   },
   {
     title: `Why I've been avoiding next.js`,
-    href: "/next",
+    href: "/posts/next",
     postDate: new Date("2024-10-14"),
   },
 ];
@@ -32,6 +33,7 @@ const posts: Post[] = [
 export default function Home() {
   return (
     <div className={`flex flex-col gap-6`}>
+      <NowBuilding />
       <h1>Posts</h1>
       <ul className="list-none space-y-3">
         {posts.map((post) => (
