@@ -10,22 +10,22 @@ type Post = {
 const posts: Post[] = [
   {
     title: "My philosophy for software development",
-    href: "/posts/software-development-philosophy-one",
+    href: "/posts/2024/11/software-development-philosophy-one",
     postDate: new Date("2024-11-05"),
   },
   {
     title: "Retrospectives are the most important Agile meetings",
-    href: "/posts/retrospectives-are-most-important",
+    href: "/posts/2024/10/retrospectives-are-most-important",
     postDate: new Date("2024-10-29"),
   },
   {
     title: "What I've learned after trying to write for two weeks",
-    href: "/posts/two-weeks-writing",
+    href: "/posts/2024/10/two-weeks-writing",
     postDate: new Date("2024-10-22"),
   },
   {
     title: `Why I've been avoiding next.js`,
-    href: "/posts/next",
+    href: "/posts/2024/10/next",
     postDate: new Date("2024-10-14"),
   },
 ];
