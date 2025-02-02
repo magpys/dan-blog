@@ -9,6 +9,11 @@ type Post = {
 
 const posts: Post[] = [
   {
+    title: "The River and the Antler",
+    href: "/posts/2025/01/river-and-antler",
+    postDate: new Date("2025-01-29"),
+  },
+  {
     title: "My philosophy for software development",
     href: "/posts/2024/11/software-development-philosophy-one",
     postDate: new Date("2024-11-05"),
@@ -27,11 +32,6 @@ const posts: Post[] = [
     title: `Why I've been avoiding next.js`,
     href: "/posts/2024/10/next",
     postDate: new Date("2024-10-14"),
-  },
-  {
-    title: "The River and the Antler",
-    href: "/posts/2025/01/river-and-antler",
-    postDate: new Date("2025-01-29"),
   },
 ];
 
