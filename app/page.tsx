@@ -28,6 +28,11 @@ const posts: Post[] = [
     href: "/posts/2024/10/next",
     postDate: new Date("2024-10-14"),
   },
+  {
+    title: "The River and the Antler",
+    href: "/posts/2025/01/river-and-antler",
+    postDate: new Date("2025-01-29"),
+  },
 ];
 
 export default function Home() {
