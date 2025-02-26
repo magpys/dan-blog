@@ -1,0 +1,55 @@
+import Image from "next/image";
+
+# Dev Diary
+
+I wish to capture my progress while developing this game, mainly as inspiration to myself, to see how far I have come
+over time.
+
+I'm capturing it here instead of in notebooks so that I can take screenshots. Pictures can be worth a thousand words,
+especially when you're iterating on one thing. It can be hard to remember the old versions of a thing.
+
+## 24/02/2025
+
+### Aim: Give my generated blob a pattern.
+
+There is a pattern, and it generates anew each time in a satisfying way.
+
+<div className={`flex items-center justify-center`}>
+  <Image
+    src="dev/pattern-blob.png"
+    alt={`A pattern, inexpertly applied to a crude drawing of a blob.`}
+    width={300}
+    height={300}
+  />
+</div>
+
+The eagle eyed amongst you might notice that it leaves the confines of the blob's body in a way that even a 3-year-old
+could not be proud of though.
+
+It is NOT fully random, each pixel is determined crudely by the pixels that came before it. If most of them directly
+above and to the left are orange, then this one will also be orange.
+
+Next time, I want to clean up the edges so it looks less like a drawing of a blob that has glitched out and more like a
+blob with a fetching pattern.
+
+## 24/02/2025
+
+### Aim: Make the pattern stay within the blob bounds
+
+I did not achieve this! It turns out that it is actually quite difficult to make only the pattern within the stroke
+visible and the rest invisible without writing it pixel by pixel.
+
+There must be a nicer way to do this.
+
+How about if we also determine the shape of the blob randomly? Then we need not worry about canvas, we only need to
+worry about making it a coherent whole, which can be done with the neighbours function that I already use.
+
+So I have a rectangle at present, but we could make the blob a small circle of colour and pattern in the center, or a
+spiky thing all one colour, or anything in between. My suspicion is that it will STILL be kind of cure if we just also
+draw the eyes over the top of it!
+
+This way I also get around my absolute inability to draw.
+
+This could be a blessing in disguise!
+
+Next time: Let's try generating the shape too, within some boundaries.
