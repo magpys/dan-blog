@@ -1,0 +1,69 @@
+import Image from "next/image";
+
+# Capoeira Derby Dev Diary
+
+I've begun this project because the old Capoeira website is not optimal, in a number of ways.
+
+First, it has no photos. This sort of thing needs to be 80% photos. Pictures speak a thousand words with these things.
+
+Second, the website theme feels out of date, and has subtle bugs that I don't know how to fix. I have no doubt I could
+improve the theme and work out the bugs, but given that it is built using wordpress, I also have no doubt that it would
+take me as long to work out the bugs as it would to build it from scratch using React/NextJS.
+
+Finally, the information on the website is out of date. This is relatively easy to update, especially in wordpress, but
+it is unpleasant, and if I need to do any updates other than text, I am left grappling with the wordpress admin UI
+again.
+
+Combine all of these things and I have landed on the conclusion that it will be easier to build it from scratch than it
+will be to update this website.
+
+## 02/03/2025
+
+### Aim: Replace the website?
+
+I really was not sure how far I could get in one day. I hoped I'd get a functioning website churned out, though this was
+certainly ambitious.
+
+What I've actually gotten done is this:
+
+<div className={`flex items-center justify-center`}>
+  <Image
+    src="/dev/capoeira-derby-home-page.png"
+    alt={`A screenshot of the Capoeira Derby web page.`}
+    width={300}
+    height={300}
+  />
+</div>
+
+The website theme and layout is taking shape. I have a working header with links, a nice friendly banner photo with all
+of us smiling, a friendly colourful tagline and more photos alongside an introduction to the Derby Capoeira group.
+
+There are a number of things left to do though. The theme is taking shape... but far from complete. The colours are
+blunt and could be more subtle and complimentary.
+
+The links don't yet go anywhere, and are unstyled, as are the CTAs.
+
+The images could do with a bit of blending into the page.
+
+The footer is incomplete.
+
+It is not hosted nor deployed anywhere.
+
+The page is totally unresponsive:
+
+<div className={`flex items-center justify-center`}>
+  <Image
+    src="/dev/capoeira-derby-mobile-unresponsive.png"
+    alt={`A screenshot of the Capoeira Derby web page in mobile mode. It does not look good.`}
+    width={300}
+    height={300}
+  />
+</div>
+
+So certainly lots left to do!
+
+But it has been rewarding work so far. Anything that helps channel traffic to the Capoeira group makes me happy.
+
+I'd love to have this done by the end of next weekend.
+
+**Next time:** Add some of the pages, starting with 'what is Capoeira?'

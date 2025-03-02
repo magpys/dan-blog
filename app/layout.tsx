@@ -10,6 +10,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Magpys",
   description: "Magpys Blog",
+  icons: ["/icon.png"],
 };
 
 export default function RootLayout({
@@ -30,18 +31,8 @@ export default function RootLayout({
       <body className={`antialiased min-h-screen`}>
         <header className={`bg-gray-800 flex items-center justify-between p-6`}>
           <Link href={"/"} className={"flex gap-6 items-center"}>
-            <Image
-              src={`magpie.png`}
-              alt="An iconised magpie"
-              width={32}
-              height={32}
-              unoptimized
-            />
-            <div
-              className={`text-4xl text-orange-400 font-bold hidden sm:block`}
-            >
-              Magpys
-            </div>
+            <Image src={`magpie.png`} alt="An iconised magpie" width={32} height={32} unoptimized />
+            <div className={`text-4xl text-orange-400 font-bold hidden sm:block`}>Magpys</div>
           </Link>
 
           <nav className="flex items-center justify-between gap-6 font-normal">
