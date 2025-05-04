@@ -169,3 +169,85 @@ So final page list could be:
 - Contact (just for ease of scanning)
 
 Next time: Think more on this layout. Add the 'Our Group' page and think about maybe combining the pages.
+
+## 09/03/2025
+
+### Aim: Add the 'Our Group' page
+
+Adding went well! The page lives! I had to add more about the instructors now, and less about the controversy of leaving
+Cordao de Ouro.
+
+Technically, it was cool to see that I can just add the video directly too. It was more trouble converting the video
+into mp4 format rather than actually embedding it in the page.
+
+I also started to clean up the page a little bit. There were a few unresponsive bits and a few other little fixes to do.
+
+The only things left to do now are to decide on the final list of pages, do a bit of QA and finally actually host the
+thing on github so people can actually see it!
+
+Next time: Finally decide on and implement the final list of pages.
+
+## 17/03/2025
+
+### Aim: Finish it off
+
+It has been a week since I really got any time to work on this. I was extremely busy - my free days were eaten by
+Capoeira lesson planning, illness and gigs.
+
+Now though, I have a week off. For the rest of the week I'll be recording, but today I have a free day, and I wanted to
+finish this website. At least, from a development perspective.
+
+What did that entail though?
+
+- Combining the 'our group' and 'What is Capoeira' pages into a single 'About' page
+- Add a not found page
+- Change the 'Can I do Capoeira?' page to an FAQs page
+- Copious minor bug fixing
+- Hosting the website in github pages, and adding github actions pipelines to build it
+- Adding a custom font
+- Getting permissions from the parents to show images of their children on the internet
+
+Wow, it's a lot when I spell it out like that.
+
+Did I get it all done? Of course I did!
+
+I started with adding the About page and renaming FAQs, along with some minor bug fixes around the menu layout and
+changing links to those pages. That was easy enough if a little time consuming.
+
+Next I decided to host the thing. THAT was harder. Despite it being exactly the same as what I've done before with my
+blog, it still took over an hour with a fair bit of trial and error in various config files before i got it working.
+
+Especially noteworthy is the fact that I added some background images this time, and embedded a video. The NExt `Image`
+component has it's own way of dealing with image paths which I have had to deal with before with my blog, however the
+background images and videos do NOT work that way, so I've had to do a rather ugly hack to prepend the repository
+endpoint onto the front of the image and video file names.
+
+<div className={`flex items-center justify-center`}>
+  <Image
+    src="/dev/capoeira-derby-ugly-prepend.png"
+    alt={`a screenshot of some damn ugly code.`}
+    width={300}
+    height={300}
+  />
+</div>
+
+But eventually it was all working. Until I realised I had forgotten to add a font, so then I spent 30 minutes fighting
+with google fonts, tailwind, css and chatgpt to work out how to upload and use my font of choice.
+
+A quick round of QA from Chris to iron out a couple of minor bugs, then permissions sent off to parents.
+
+Was it all worth it? I think the final product is looking pretty good...
+
+<div className={`flex items-center justify-center`}>
+  <Image src="/dev/capoeira-derby-final-home.png" alt={`a screenshot of the final site.`} width={300} height={300} />
+</div>
+
+Next time (and the final time?): Implement any required changes due to feedback then get it deployed by working with
+Dave.
+
+## 19/04/2025
+
+It has been shared, and feedback has been received. It's mainly positive. Chris was able to point out some minor flaws,
+but that is all.
+
+Just waiting on Dave being free so that I can deploy it to the correct URL, then we're done!
