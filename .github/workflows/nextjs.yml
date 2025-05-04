@@ -31,9 +31,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Use production 2024-10-next config
+      - name: Use production next config
         run:
-          mv 2024-10-next.config.prod.js 2024-10-next.config.js
+          mv next.config.prod.js next.config.js
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -69,7 +69,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} 2024-10-next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

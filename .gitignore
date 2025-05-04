@@ -9,7 +9,7 @@
 # testing
 /coverage
 
-# 2024-10-next.js
+# next.js
 /.next/
 /out/
 
