@@ -1,5 +1,4 @@
 import PostItem from "@/components/PostItem";
-import NowBuilding from "@/components/NowBuilding";
 
 type Post = {
   title: string;
@@ -38,16 +37,10 @@ const posts: Post[] = [
 export default function Home() {
   return (
     <div className={`flex flex-col gap-6`}>
-      <NowBuilding />
       <h1>Posts</h1>
       <ul className="list-none space-y-3">
         {posts.map((post) => (
-          <PostItem
-            key={post.title}
-            postDate={post.postDate}
-            href={post.href}
-            title={post.title}
-          />
+          <PostItem key={post.title} postDate={post.postDate} href={post.href} title={post.title} />
         ))}
       </ul>
     </div>
