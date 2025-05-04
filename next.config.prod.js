@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+// eslint-disable-2024-10-next-line @typescript-eslint/no-require-imports
 import createMDX from "@next/mdx";
 
 const withMDX = createMDX();
