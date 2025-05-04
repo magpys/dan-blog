@@ -9,7 +9,13 @@ export default async function Home() {
       <h1>Posts</h1>
       <ul className="list-none space-y-3">
         {posts.map((post) => (
-          <PostItem key={post.title} postDate={post.postDate} href={`/posts/${post.slug}`} title={post.title} />
+          <PostItem
+            key={post.title}
+            postDate={post.postDate}
+            href={`/posts/${post.slug}`}
+            title={post.title}
+            tags={post.tags}
+          />
         ))}
       </ul>
     </div>
