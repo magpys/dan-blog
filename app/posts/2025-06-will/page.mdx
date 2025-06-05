@@ -1,0 +1,68 @@
+# Sheer Willpower
+
+Last week, I switched the authentication and authorisation system for our company. It is used by about 30,000 users to
+access our online services, which total three separate product areas and around forty codebases.
+
+The apps are mainly .net or js and have been built in ways typical to their time periods. There is a giant monolith from
+the 2000s, an API with an angular front end from the 2010s and a botched attempt at microservices from the 2020s. All of
+these apps communicate with each other... poorly.
+
+The old authentication system comes from the 2000s and is part of the monolith. Daunting and self-built, it technically
+follows oauth2, but - to quote the main developer of the system - "with some improvements". To risk stating the obvious,
+these are obviously not improvements in the eyes of anyone except him.
+
+Like any software that has survived for twenty years, it is a mess. It has likely gone through thousands of changes and
+weathered plenty of foolish decisions. It has quirks that no doubt make sense to the original developers but seem insane
+to any outsiders.
+
+Working with it feels closer to ritualistic magic than engineering. "How do you change the password for a user?" "You
+must circle clockwise around the static god class thrice while chanting out the hashing algorithm details, then you must
+sacrifice one product manager...". Definitely more art than science.
+
+Why am I saying all of this? To impress upon you the gravity of what has been achieved. The developments in the 2010s
+and 2020s added on top of the monolith were initially meant to be replacements. They both failed and contributed to the
+complexity of the whole. Now whenever changing anything you have to consider not only whether it works for the monolith,
+but does it work for the bolted on .net core app that manages subscriptions? How about the registration microservice?
+Perhaps the carbon tracking service that is accessed from a hard coded link within the monolith but for some reason uses
+redis to manage sessions?
+
+And yet, last week, I ripped out the old authentication and authorisation system and replaced it with a modern
+alternative. Not only that, I managed it with zero downtime for users, and while some users accounts were mangled and
+did need manual fixes, 99% of accounts had zero problems. **I am proud of this**.
+
+It was not easy. It took us six months of preparation to get to the point where we could switch over. Most of the
+original developers were gone and many of the ones that remained did not want us to change it, so we effectively had to
+work out how all of the systems communicated ourselves. There were no working test environments. The previous team were
+testing fixes by pushing them straight to production. We had to build the environment so that we could even test the
+switch over that we wanted to make...!
+
+Even after those six months of preparation, we were not really ready. But we could have prepared for another two years
+and still not really know for sure if we had missed any quirks in the two decade old system. We were ready enough. We
+had a fallback plan to revert back to the old authentication system if anything went horribly wrong, but other than that
+we just had to be accept that there would be some bugs and react as quickly as we could with fixes.
+
+On the week of the release, we found an unforeseen quirk which meant we had to push back the launch for one week. Then
+we found another issue on that launch day and had to push it back another day. Finally, on a Friday, we ran the
+migrations and made the switch.
+
+In those two weeks, I did an extra 35 hours of work, 11 of which were on the Friday we did the switch over, when I
+worked from 8.30am to 3.30am the next day. I consumed three filter coffees, two instant coffees and about two litres of
+pepsi max. I was more caffeine than man.
+
+But it was done. On the next week, there were bugs, but none so serious that we needed to rollback. 1% of users with
+issues is still 300 users, which equals near constant firefighting, but they were dropping off in severity by mid-week.
+
+So much of software development feels inconsequential and low stakes. Once you become senior, most things are easy too.
+
+This switch over was something that I was genuinely unsure about. I did not know if it would succeed, if I could do it.
+I didn't even mind the extra hours. It felt good to fight, to impose my will upon a problem, to force success through
+sheer effort.
+
+Undoubtedly, I am tired and on the edge of burnout. You can't do that many hours without burning away your own body and
+mind. But I feel fulfilled.
+
+For the first time in many years I feel like I have pushed myself and achieved something that I am proud of. It feels
+good.
+
+I need time to recover, but give me a month or two and I'll be back, looking for the next real challenge. Something to
+sink my teeth into. Something to really make me feel alive.
